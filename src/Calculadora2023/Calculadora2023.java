@@ -7,11 +7,17 @@ import java.util.Scanner;
 public class Calculadora2023 {
 
     public static void main(String[] args) {
+    	//Variáveis
         double num1, num2, resultado, modulo;
-
+        
+        //Instancias
+        JonasOperacoes JonasOp = new JonasOperacoes();
+        
+        
+        //Início
         System.out.println("Digite o primeiro número: " );
-        Scanner input= new Scanner (System.in);
-        num1=input.nextDouble();
+        Scanner input = new Scanner (System.in);
+        num1 = input.nextDouble();
 
         System.out.println("Digite o segundo número: " );
         num2=input.nextDouble();
@@ -26,12 +32,22 @@ public class Calculadora2023 {
         modulo = somalarissa.modulo(resultado);
         System.out.println("O módulo é: " + modulo );
 
-         //Subtração
+        //Subtração
 
-        // Multiplicação
+        //Jonas >> Multiplicação
+        System.out.println("A Multiplicação é: " + JonasOp.multiplicacao(num1, num2));
+        
 
         // Divisão
 
+               
+        //Jonas >> Hipotenusa
+        System.out.println("A Hipotenusa dos lados A = " + num1 + " e B = " + num2 + " é = " + JonasOp.Hipotenusa(num1, num2));
+        
+        //Potenciação
+        
+        
+        
     }
 
 }

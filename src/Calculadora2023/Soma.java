@@ -16,6 +16,13 @@ public class Soma {
         {double modulo = resultado*(1);
             return modulo;}
 }
+    
+    //Método implementado por Jonas
+    //potenciação onde Num1 elevado por Num2
+    
+    public double potenciacao(double num1, double num2) {
+    	return Math.pow(num1, num2);
+    }
 
 
 }
