@@ -27,7 +27,9 @@ public class Calculadora2023 {
         System.out.println("O módulo é: " + modulo );
 
          //Subtração
-
+         subsavio subtracao = new subsavio();
+         resultado = subtracao.subtrair(num1, num2);
+         System.out.println("A subtração é: " + resultado);
         // Multiplicação
 
         // Divisão
