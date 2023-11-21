@@ -46,6 +46,9 @@ public class Calculadora2023 {
         
         //Potenciação
         
+        //Jonas >> Binário
+        Double somaResul = resultado;
+        System.out.println("O resultado inteiro da soma em binário é: " + somalarissa.numeroDecimalParaBinario(somaResul.intValue()));
         
         
     }
