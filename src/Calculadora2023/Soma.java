@@ -15,9 +15,31 @@ public class Soma {
         else
         {double modulo = resultado*(1);
             return modulo;}
-}
-
-
+    }
+    
+    		//Método implementado por Jonas
+    		//
+       
+    String numeroDecimalParaBinario(int decimal) {
+		//Variáveis para Operação
+		int quociente = 0;
+		int resto;
+		int dividendo = decimal;	
+		String binario = "";	
+		
+		//Operação
+		do{
+			resto = (dividendo % 2);
+			
+			quociente = (dividendo - resto) / 2;
+				
+			dividendo = (quociente); // 27
+			
+			binario = resto + binario;
+						
+		}while(dividendo >= 1);
+		return binario;
+	}
 }
 
 
