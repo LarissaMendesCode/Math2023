@@ -53,8 +53,8 @@ public class Calculadora2023 {
         Double somaResul = resultado;
         System.out.println("O resultado inteiro da soma em binário é: " + somalarissa.numeroDecimalParaBinario(somaResul.intValue()));
         
-        //Savio >> Exponenciação
-        System.out.println ("O resultado da exponenciação é: " + Math.pow (num1, num2));
+        //Savio >> 
+        System.out.println("A soma da área é:" + num1 * num2);
     }
 
 }
