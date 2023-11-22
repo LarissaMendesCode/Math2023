@@ -50,11 +50,17 @@ public class Calculadora2023 {
         //Potenciação
         
         //Jonas >> Binário
-        Double somaResul = somalarissa.soma(num1, num2);
+        Double somaResul = resultado;
         System.out.println("O resultado inteiro da soma em binário é: " + somalarissa.numeroDecimalParaBinario(somaResul.intValue()));
         
-        //Savio >> 
-        System.out.println("A soma da área é:" + num1 * num2);
+        //Savio >>  
+         if (num1*num2<0){
+            System.out.println("O cálculo da área do retângulo é:" + num1 * num2*-1);
+        }
+        else {
+            System.out.println("O cálculo da área do retângulo é:" + num1 * num2);
+        }
+        
     }
 
 }
