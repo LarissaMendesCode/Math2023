@@ -50,7 +50,7 @@ public class Calculadora2023 {
         //Potenciação
         
         //Jonas >> Binário
-        Double somaResul = resultado;
+        Double somaResul = somalarissa.soma(num1, num2);
         System.out.println("O resultado inteiro da soma em binário é: " + somalarissa.numeroDecimalParaBinario(somaResul.intValue()));
         
         //Savio >> 
