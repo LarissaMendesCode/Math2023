@@ -2,8 +2,6 @@ package Calculadora2023;
 
 import java.util.Scanner;
 
-
-
 public class Calculadora2023 {
 
     public static void main(String[] args) {
@@ -12,8 +10,8 @@ public class Calculadora2023 {
         
         //Instancias
         JonasOperacoes JonasOp = new JonasOperacoes();
-        
-        
+        raylsonOperacao objRaylson = new raylsonOperacao();  // Adicionado aqui
+
         //Início
         System.out.println("Digite o primeiro número: " );
         Scanner input = new Scanner (System.in);
@@ -21,7 +19,6 @@ public class Calculadora2023 {
 
         System.out.println("Digite o segundo número: " );
         num2=input.nextDouble();
-
 
         //Soma
         Soma somalarissa = new Soma ();
@@ -53,14 +50,15 @@ public class Calculadora2023 {
         Double somaResul = resultado;
         System.out.println("O resultado inteiro da soma em binário é: " + somalarissa.numeroDecimalParaBinario(somaResul.intValue()));
         
-        //Savio >>  
+        //Savio >>  Área do retângulo
          if (num1*num2<0){
-            System.out.println("O cálculo da área do retângulo é:" + num1 * num2*-1);
+            System.out.println("O cálculo da área do retângulo é: " + num1 * num2*-1);
         }
         else {
-            System.out.println("O cálculo da área do retângulo é:" + num1 * num2);
+            System.out.println("O cálculo da área do retângulo é: " + num1 * num2);
         }
-        
-    }
 
+        //Raylson >> Área do círculo
+        objRaylson.AreaCirculo(num1, num2);  // Adicionado aqui
+    }
 }
