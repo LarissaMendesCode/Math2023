@@ -42,13 +42,13 @@ public class Calculadora2023 {
 
                
         //Jonas >> Hipotenusa
-        System.out.println("A Hipotenusa dos lados A = " + num1 + " e B = " + num2 + " é = " + JonasOp.Hipotenusa(num1, num2));
+        System.out.println("A Hipotenusa dos lados A = " + somalarissa.modulo(num1) + " e B = " + somalarissa.modulo(num2) + " é = " + JonasOp.Hipotenusa(num1, num2));
         
         //Potenciação
         
         //Jonas >> Binário
-        Double somaResul = resultado;
-        System.out.println("O resultado inteiro da soma em binário é: " + somalarissa.numeroDecimalParaBinario(somaResul.intValue()));
+        Double somaResul = somalarissa.modulo(somalarissa.soma(num1, num2));
+        System.out.println("O resultado da soma dos Inteiros recebido, em binário, é: " + somalarissa.numeroDecimalParaBinario(somaResul.intValue()));
         
         //Savio >>  Área do retângulo
          if (num1*num2<0){
