@@ -9,7 +9,7 @@ public class Calculadora2023 {
         double num1, num2, resultado, modulo;
         
         //Instancias
-        JonasOperacoes JonasOp = new JonasOperacoes();
+        JonasOperacoes objJonas = new JonasOperacoes();
         raylsonOperacao objRaylson = new raylsonOperacao();  // Adicionado aqui
 
         //Início
@@ -35,14 +35,14 @@ public class Calculadora2023 {
          System.out.println("A subtração é: " + resultado);
         // Multiplicação
          //Jonas >> Multiplicação
-        System.out.println("A Multiplicação é: " + JonasOp.multiplicacao(num1, num2));
+        System.out.println("A Multiplicação é: " + objJonas.multiplicacao(num1, num2));
         
 
         // Divisão
 
                
         //Jonas >> Hipotenusa
-        System.out.println("A Hipotenusa dos lados A = " + somalarissa.modulo(num1) + " e B = " + somalarissa.modulo(num2) + " é = " + JonasOp.Hipotenusa(num1, num2));
+        System.out.println("A Hipotenusa dos lados A = " + somalarissa.modulo(num1) + " e B = " + somalarissa.modulo(num2) + " é = " + objJonas.Hipotenusa(num1, num2));
         
         //Potenciação
         
