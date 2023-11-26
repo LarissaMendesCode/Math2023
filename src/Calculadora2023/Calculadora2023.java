@@ -12,6 +12,7 @@ public class Calculadora2023 {
         JonasOperacoes objJonas = new JonasOperacoes();
         raylsonOperacao objRaylson = new raylsonOperacao();  // Adicionado aqui
         RamonOperacoes objRamon = new RamonOperacoes();
+        
         //Início
         System.out.println("Digite o primeiro número: " );
         Scanner input = new Scanner (System.in);
@@ -60,6 +61,12 @@ public class Calculadora2023 {
 
         //Raylson >> Área do círculo
         objRaylson.AreaCirculo(num1, num2);  // Adicionado aqui
+        
+        //Ramon >> Raiz Quadrada
+        System.out.println("A Raiz Quadarada da Soma dos números é: " + objRamon.CalcularRaizQuadrada(somalarissa.soma(num1, num2)) );
+        
+        //Ramon >> Raiz Cubica
+        System.out.println("A Raiz Cúbica  da Soma dos números é: " + objRamon.CalcularRaizCubica(somalarissa.soma(num1, num2)) );
         
         //Fim
     }
