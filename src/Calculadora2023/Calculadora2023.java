@@ -11,7 +11,7 @@ public class Calculadora2023 {
         //Instancias
         JonasOperacoes objJonas = new JonasOperacoes();
         raylsonOperacao objRaylson = new raylsonOperacao();  // Adicionado aqui
-
+        RamonOperacoes objRamon = new RamonOperacoes();
         //Início
         System.out.println("Digite o primeiro número: " );
         Scanner input = new Scanner (System.in);
