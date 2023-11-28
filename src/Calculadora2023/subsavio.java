@@ -7,10 +7,7 @@ public class subsavio {
         resultado = num1-num2;
         return resultado;
     }
-  
 }
-
-
 
 
 

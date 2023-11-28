@@ -37,6 +37,7 @@ public class Calculadora2023 {
          subsavio subtracao = new subsavio();
          resultado = subtracao.subtrair(num1, num2);
          System.out.println("A subtração é: " + resultado);
+
         // Multiplicação
          //Jonas >> Multiplicação
         System.out.println("A Multiplicação é: " + objJonas.multiplicacao(num1, num2));
@@ -45,8 +46,11 @@ public class Calculadora2023 {
         System.out.println("O resultado truncado da multiplicação é:  " + objJonas.nomeMétodo(num1*num2));
 
         // Divisão Matheus
-        Object DivisaoMatheus = new DivisaoMatheus();
-        System.out.println("A divisão é: " + ((DivisaoMatheus) DivisaoMatheus).divisao(num1, num2));
+        DivisaoMatheus DivisaoMatheus = new DivisaoMatheus();
+        if (num1 == 0 || num2 == 0) {
+            System.out.println("Não é possível dividir por zero");
+        } else
+        System.out.println("A divisão é: " + DivisaoMatheus.divisao(num1, num2));
 
         //Jonas >> Hipotenusa
         System.out.println("A Hipotenusa dos lados A = " + somalarissa.modulo(num1) + " e B = " + somalarissa.modulo(num2) + " é = " + objJonas.Hipotenusa(num1, num2));
@@ -74,12 +78,18 @@ public class Calculadora2023 {
         //Ramon >> Raiz Cubica
         System.out.println("A Raiz Cúbica  da Soma dos números é: " + objRamon.CalcularRaizCubica(somalarissa.soma(num1, num2)) );
         
-      //Ramon >> Hexadecimal
+       //Ramon >> Hexadecimal
         objJonas.DoubleToHex(num1, num2);
 
         //Matheus Transformando a divisão em Inteiro
-        System.out.println("O resultado da divisão em inteiro é: " + ((DivisaoMatheus) DivisaoMatheus).divisaoInteiro(num1, num2));
-        
+        if (num1 == 0 || num2 == 0) {
+            System.out.println("Não é possível exibir o numeiro inteiro de uma divisão por zero");
+        } else
+        System.out.println("O resultado da divisão em inteiro é: " + DivisaoMatheus.divisãoInteiro(num1/num2));
+
+        //Matheus Calculando a Raiz Quarta (implementado na classe RamonOperacoes)
+        System.out.println("A raiz Quarta do número é: " + objRamon.CalcularRaizQuarta(somalarissa.soma(num1, num2)));
+
         //Fim
 
 
