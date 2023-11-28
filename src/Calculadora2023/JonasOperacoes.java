@@ -19,4 +19,12 @@ public class JonasOperacoes {
 			Double varHex = ObjSoma.modulo(ObjSoma.soma(num1, num2));
 			System.out.println("O valor em Hexadecimal do inteiro do resultado da soma dos valores recebido é: " + "\u0030" + Integer.toHexString(varHex.intValue()).toUpperCase());
 		}
-}
+
+
+	//método implementado Larissa
+	//trucar o resultado da multiplicação
+	public int nomeMétodo(double variável) {
+		Double num = variável;
+		return num.intValue();
+	}
+	}

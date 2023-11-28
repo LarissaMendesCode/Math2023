@@ -8,6 +8,7 @@ public class Calculadora2023 {
     	
     	//Variáveis
         double num1, num2, resultado, modulo;
+        double num;
         
         //Instancias
         JonasOperacoes objJonas = new JonasOperacoes();
@@ -39,7 +40,9 @@ public class Calculadora2023 {
         // Multiplicação
          //Jonas >> Multiplicação
         System.out.println("A Multiplicação é: " + objJonas.multiplicacao(num1, num2));
-        
+
+        //Larissa
+        System.out.println("O resultado truncado da multiplicação é:  " + objJonas.nomeMétodo(num1*num2));
 
         // Divisão
 
@@ -74,5 +77,7 @@ public class Calculadora2023 {
         objJonas.DoubleToHex(num1, num2);
         
         //Fim
+
+
     }
 }
