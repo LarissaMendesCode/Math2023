@@ -19,7 +19,7 @@ public class RamonOperacoes {
 	 * @return o resultado da divisão
 	 */
 	double CalcularRaizQuarta(double numero) {
-		return Math.pow(numero, 1.0 / 4.0);
+		return Math.pow(objLarissa.modulo(numero), 0.25);
 	}
 
 }
