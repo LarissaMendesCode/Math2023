@@ -44,9 +44,10 @@ public class Calculadora2023 {
         //Larissa
         System.out.println("O resultado truncado da multiplicação é:  " + objJonas.nomeMétodo(num1*num2));
 
-        // Divisão
+        // Divisão Matheus
+        Object DivisaoMatheus = new DivisaoMatheus();
+        System.out.println("A divisão é: " + ((DivisaoMatheus) DivisaoMatheus).divisao(num1, num2));
 
-               
         //Jonas >> Hipotenusa
         System.out.println("A Hipotenusa dos lados A = " + somalarissa.modulo(num1) + " e B = " + somalarissa.modulo(num2) + " é = " + objJonas.Hipotenusa(num1, num2));
         
@@ -56,7 +57,7 @@ public class Calculadora2023 {
         Double somaResul = somalarissa.modulo(somalarissa.soma(num1, num2));
         System.out.println("O resultado da soma dos Inteiros recebido, em binário, é: " + somalarissa.numeroDecimalParaBinario(somaResul.intValue()));
         
-        //Savio >>  Área do retângulo
+        //Savio >> Área do retângulo
          if (num1*num2<0){
             System.out.println("O cálculo da área do retângulo é: " + num1 * num2*-1);
         }
@@ -75,6 +76,9 @@ public class Calculadora2023 {
         
       //Ramon >> Hexadecimal
         objJonas.DoubleToHex(num1, num2);
+
+        //Matheus Transformando a divisão em Inteiro
+        System.out.println("O resultado da divisão em inteiro é: " + ((DivisaoMatheus) DivisaoMatheus).divisaoInteiro(num1, num2));
         
         //Fim
 
