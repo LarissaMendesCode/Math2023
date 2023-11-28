@@ -5,6 +5,7 @@ import java.util.Scanner;
 public class Calculadora2023 {
 
     public static void main(String[] args) {
+    	
     	//Variáveis
         double num1, num2, resultado, modulo;
         
